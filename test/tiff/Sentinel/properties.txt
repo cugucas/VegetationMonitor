@@ -1,0 +1,60 @@
+ 
+---- Raster Properties ----
+Dataset
+ = J:\southsea program\数据\示例数据\二级产品\Sentinel\wengchang_Sentinel.tif
+Size = 5,226,798 bytes
+Type = TIFF
+Columns = 538
+Rows = 480
+Bands = 4
+Interleave = BIP
+Data Type = UInt
+Data Ignore Value = 65535.0
+ 
+---- Map Info Properties ----
+Type = Projected
+Pixel Tie Point X = 0.0
+Pixel Tie Point Y = 0.0
+Map Tie Point X = 472841.92845347
+Map Tie Point Y = 2159966.48155432
+Pixel Size X = 10.0
+Pixel Size Y = 10.0
+Units = Meters
+Rotation = 0.0
+ 
+---- Coordinate System Properties ----
+Projcs = "WGS_1984_UTM_Zone_49N"
+Geogcs = "GCS_WGS_1984"
+Datum = "D_WGS_1984"
+Spheroid = "WGS_1984",6378137.0,298.257223563
+Prime Meridian = "Greenwich",0.0
+Unit = "Degree",0.0174532925199433
+Projection = "Transverse_Mercator"
+False Easting = 500000.0
+False Northing = 0.0
+Central Meridian = 111.0
+Scale Factor = 0.9996
+Latitude of Origin = 0.0
+Unit = "Meter",1.0
+Coordinate System String
+ = PROJCS["WGS_1984_UTM_Zone_49N",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",111.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]
+ 
+---- Extents Properties ----
+Extent Left = 472841.92845347
+Extent Top = 2159966.48155432
+Extent Right = 478221.92845347
+Extent Bottom = 2155166.48155432
+Units = Meters
+ 
+---- Spectral Properties ----
+Band Names 1 = Band 1
+Band Names 2 = Band 2
+Band Names 3 = Band 3
+Band Names 4 = Band 4
+ 
+---- Time Properties ----
+Acquisition Time = Unknown
+ 
+---- Security Properties ----
+Security Tag = Unknown
+ 

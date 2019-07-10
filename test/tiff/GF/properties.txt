@@ -1,0 +1,175 @@
+ 
+---- Raster Properties ----
+Dataset
+ = J:\southsea program\数据\2_ProcessData\2_GF\文昌\GF2_20180807\GF2_PMS2_E110.8_N19.5_20180807_L1A0003376501-MSS2.tiff
+Size = 403,538,080 bytes
+Type = TIFF
+Columns = 7300
+Rows = 6908
+Bands = 4
+Interleave = BIP
+Data Type = UInt
+Product Type = STANDARD
+ 
+---- RPC Info Properties ----
+Line Offset = 3645.0
+Sample Offset = 3654.0
+Latitude Offset = 19.52598614
+Longitude Offset = 110.76714534
+Height Offset = 1.94500134
+Line Scale = 4224.0
+Sample Scale = 4224.0
+Latitude Scale = 0.15502307
+Longitude Scale = 0.17433986
+Height Scale = 2071.75930513
+Line Numerator 1 = 1.97702805E-004
+Line Numerator 2 = -2.76249278E-001
+Line Numerator 3 = -1.18148386E+000
+Line Numerator 4 = -1.54574651E-003
+Line Numerator 5 = 3.74288317E-005
+Line Numerator 6 = -3.13058750E-006
+Line Numerator 7 = -1.64595949E-005
+Line Numerator 8 = -6.31430892E-004
+Line Numerator 9 = -7.69791704E-004
+Line Numerator 10 = 4.84519442E-007
+Line Numerator 11 = -7.22127491E-006
+Line Numerator 12 = -1.46822614E-005
+Line Numerator 13 = -5.95783311E-004
+Line Numerator 14 = 8.33135369E-007
+Line Numerator 15 = -9.71247209E-005
+Line Numerator 16 = -1.95183073E-003
+Line Numerator 17 = 3.55312459E-006
+Line Numerator 18 = -6.82866083E-007
+Line Numerator 19 = -2.18433299E-005
+Line Numerator 20 = 4.51972437E-009
+Line Denominator 1 = 1.00000000E+000
+Line Denominator 2 = 4.40750195E-005
+Line Denominator 3 = 5.24507544E-004
+Line Denominator 4 = 1.38155271E-005
+Line Denominator 5 = 1.44419754E-004
+Line Denominator 6 = 2.25805966E-006
+Line Denominator 7 = 1.68252701E-005
+Line Denominator 8 = 5.33552360E-005
+Line Denominator 9 = 1.70551996E-003
+Line Denominator 10 = -3.02811648E-006
+Line Denominator 11 = -1.50716251E-007
+Line Denominator 12 = 5.89872360E-007
+Line Denominator 13 = 1.63597800E-005
+Line Denominator 14 = -3.70264767E-010
+Line Denominator 15 = 3.96254218E-006
+Line Denominator 16 = 1.60261091E-005
+Line Denominator 17 = -1.24645016E-010
+Line Denominator 18 = -2.38275838E-008
+Line Denominator 19 = -3.57069497E-007
+Line Denominator 20 = 2.81190596E-012
+Sample Numerator 1 = 2.03296025E-003
+Sample Numerator 2 = 1.21076461E+000
+Sample Numerator 3 = -2.53401366E-001
+Sample Numerator 4 = 4.66140645E-002
+Sample Numerator 5 = 3.42717379E-003
+Sample Numerator 6 = 3.64792755E-003
+Sample Numerator 7 = -7.40766877E-004
+Sample Numerator 8 = -9.60930048E-003
+Sample Numerator 9 = -4.90453515E-004
+Sample Numerator 10 = 1.38510059E-004
+Sample Numerator 11 = 1.88291902E-005
+Sample Numerator 12 = 4.99485037E-005
+Sample Numerator 13 = -1.42705375E-005
+Sample Numerator 14 = 7.94111900E-006
+Sample Numerator 15 = -2.03248145E-005
+Sample Numerator 16 = 4.86868730E-005
+Sample Numerator 17 = -1.62209871E-006
+Sample Numerator 18 = -5.17232265E-005
+Sample Numerator 19 = -3.93686255E-006
+Sample Numerator 20 = 3.32302082E-007
+Sample Denominator 1 = 1.00000000E+000
+Sample Denominator 2 = 1.20388815E-003
+Sample Denominator 3 = 2.73091738E-004
+Sample Denominator 4 = -2.02618604E-005
+Sample Denominator 5 = -1.24966087E-005
+Sample Denominator 6 = 1.03531910E-005
+Sample Denominator 7 = -2.65896597E-006
+Sample Denominator 8 = 1.01239280E-005
+Sample Denominator 9 = -3.54029925E-005
+Sample Denominator 10 = -1.76044212E-006
+Sample Denominator 11 = 1.12778794E-007
+Sample Denominator 12 = 5.24978326E-008
+Sample Denominator 13 = -4.54444021E-007
+Sample Denominator 14 = 2.07523179E-007
+Sample Denominator 15 = -6.19790778E-008
+Sample Denominator 16 = 5.32913469E-008
+Sample Denominator 17 = -3.67726305E-008
+Sample Denominator 18 = -3.92471388E-007
+Sample Denominator 19 = 1.14421594E-007
+Sample Denominator 20 = -2.42940407E-008
+Tile Offset X = 0.0
+Tile Offset Y = 0.0
+Geoid Offset = -9.78335762
+Digital Elevation Model = C:\Program Files\Exelis\envi53\data\GMTED2010.jp2
+ 
+---- Coordinate System Properties ----
+Geogcs = "GCS_WGS_1984"
+Datum = "D_WGS_1984"
+Spheroid = "WGS_1984",6378137.0,298.257223563
+Prime Meridian = "Greenwich",0.0
+Unit = "Degree",0.0174532925199433
+Coordinate System String
+ = GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]
+ 
+---- Extents Properties ----
+Extent Left = 110.6261028
+Extent Top = 19.65851514
+Extent Right = 110.91160123
+Extent Bottom = 19.40460171
+Units = Degrees
+ 
+---- Spectral Properties ----
+Band Names 1 = Band 1
+Band Names 2 = Band 2
+Band Names 3 = Band 3
+Band Names 4 = Band 4
+Wavelengths Units = um
+Wavelengths 1 = 0.491
+Wavelengths 2 = 0.555
+Wavelengths 3 = 0.665
+Wavelengths 4 = 0.821
+FWHM Units = um
+FWHM 1 = 0.0611
+FWHM 2 = 0.0712
+FWHM 3 = 0.0612
+FWHM 4 = 0.1187
+Radiance Gains Units = W/(m2 sr um)
+Radiance Gains 1 = 0.1434
+Radiance Gains 2 = 0.1595
+Radiance Gains 3 = 0.1511
+Radiance Gains 4 = 0.1685
+Radiance Offsets Units = W/(m2 sr um)
+Radiance Offsets 1 = 0.0
+Radiance Offsets 2 = 0.0
+Radiance Offsets 3 = 0.0
+Radiance Offsets 4 = 0.0
+Irradiance Units = W/(m2 um)
+Irradiance 1 = 1940.93
+Irradiance 2 = 1853.99
+Irradiance 3 = 1541.39
+Irradiance 4 = 1086.51
+ 
+---- Image Parameters Properties ----
+Cloud Cover = 37%
+Sun Azimuth = 101.839°
+Sun Elevation = 12.799300°
+ 
+---- Time Properties ----
+Acquisition Time = 2018-08-07T03:50:27Z
+ 
+---- Security Properties ----
+Security Tag = Unknown
+ 
+---- Auxiliary URIs Properties ----
+Pyramid File
+ = J:\southsea program\数据\2_ProcessData\2_GF\文昌\GF2_20180807\GF2_PMS2_E110.8_N19.5_20180807_L1A0003376501-MSS2.tiff.enp
+ 
+---- Supplementary Properties ----
+sensor = PMS2
+sensor type  = GF-2
+ 

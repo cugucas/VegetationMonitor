@@ -9,6 +9,8 @@ import org.gdal.gdalconst.gdalconstConstants;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /**
  * @program: VegetationMonitor
@@ -32,15 +34,19 @@ public class ImageProcess {
         String waveLength = dataset.GetRasterBand(1).GetMetadataItem("wavelength");
         System.out.println("Size is " + xSize + ", " + ySize);
 
+        tiffDataset.setXSize(xSize);
+        tiffDataset.setYSize(ySize);
         tiffDataset.setDescription(driver.GetDescription());
         tiffDataset.setProjection(dataset.GetProjection());
         tiffDataset.setProjectionRef(dataset.GetProjectionRef());
         tiffDataset.setGeoTransform(dataset.GetGeoTransform());
 
         List<float[][]> rasters = new ArrayList<>();
+        Double[] noDataValue = new Double[1];
         float bandBuf[] = new float[xSize * ySize];
         for(int bandNo : bandsNo) {
             Band band = dataset.GetRasterBand(bandNo);
+            band.GetNoDataValue(noDataValue);
             band.ReadRaster(0, 0, xSize, ySize, bandBuf);
             float[][] raster = new float[ySize][xSize];
             for ( int i = 0; i < ySize; i++ ) {
@@ -48,13 +54,28 @@ public class ImageProcess {
             }
             rasters.add(raster);
         }
+        tiffDataset.setNoDataValue(noDataValue);
         tiffDataset.setRasters(rasters);
         dataset.delete();
         return tiffDataset;
     }
 
-    public static boolean writeTiffBands(String tiffPath, TiffDataset tiffDataset) {
+    public static void writeTiffBands(String tiffPath, TiffDataset tiffDataset) {
+        int xSize = tiffDataset.getXSize();
+        int ySize = tiffDataset.getYSize();
+        Dataset dataset = gdal.GetDriverByName(tiffDataset.getDescription()).Create(tiffPath, xSize, ySize, 1, gdalconstConstants.GDT_Float32);
+        dataset.SetGeoTransform(tiffDataset.getGeoTransform());
+        dataset.SetProjection(tiffDataset.getProjection());
 
-        return false;
+        float[][] calcResult = tiffDataset.getCalcResult();
+        float[] tiffBuf = new float[xSize * ySize];
+        for(int i = 0; i < ySize; i++) {
+            System.arraycopy(calcResult[i], 0, tiffBuf, i * xSize, xSize);
+        }
+
+        Band band = dataset.GetRasterBand(1);
+        band.SetNoDataValue(tiffDataset.getNoDataValue()[0]);
+        dataset.GetRasterBand(1).WriteRaster(0, 0, xSize, ySize, tiffBuf);
+        dataset.delete();
     }
 }

@@ -10,11 +10,15 @@ import java.util.List;
  * @create: 2019-07-10 15:57
  **/
 public class TiffDataset {
+    private int xSize;
+    private int ySize;
     private String description;
     private String projection;
     private String projectionRef;
     private double[] geoTransform;
+    private Double[] noDataValue;
     private List<float[][]> rasters;
+    private float[][] calcResult;
 
     public String getDescription() {
         return description;
@@ -54,5 +58,37 @@ public class TiffDataset {
 
     public void setRasters(List<float[][]> rasters) {
         this.rasters = rasters;
+    }
+
+    public int getXSize() {
+        return xSize;
+    }
+
+    public void setXSize(int xSize) {
+        this.xSize = xSize;
+    }
+
+    public int getYSize() {
+        return ySize;
+    }
+
+    public void setYSize(int ySize) {
+        this.ySize = ySize;
+    }
+
+    public float[][] getCalcResult() {
+        return calcResult;
+    }
+
+    public void setCalcResult(float[][] calcResult) {
+        this.calcResult = calcResult;
+    }
+
+    public Double[] getNoDataValue() {
+        return noDataValue;
+    }
+
+    public void setNoDataValue(Double[] noDataValue) {
+        this.noDataValue = noDataValue;
     }
 }
